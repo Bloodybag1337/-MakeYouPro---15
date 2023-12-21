@@ -12,7 +12,7 @@ namespace Inheritance
 
         public abstract void GiveMeShortInfo();
 
-        public void GetAPrice() //метод реализуется одинаково для всех классов
+        public void GetAPrice()
         {
             Console.WriteLine("Сколько штук Вы хотите купить?");
             double n = Convert.ToDouble(Console.ReadLine());

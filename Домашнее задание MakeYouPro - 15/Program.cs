@@ -23,29 +23,31 @@
 
 Все товары из одной категории можно сравнить между собой через метод Equals
 Необходимо создать 4 класса - родительский товар и 3 класса товара отдельно.
+
+Преобразуйте родительский класс из предыдущего задания в абстрактный, оптимальным на ваш взгляд образом.
 */
 
 using Inheritance;
 
-Smartphones[] smartphone = new Smartphones[]
+SmartphonesTechnique[] smartphone = new SmartphonesTechnique[]
 {
-new Smartphones("iPhone", "Apple", 100000),
-new Smartphones("Samsung", "Android", 85000),
-new Smartphones("Xiaomi", "Android", 32000)
+new SmartphonesTechnique("iPhone", "Apple", 100000),
+new SmartphonesTechnique("Samsung", "Android", 85000),
+new SmartphonesTechnique("Xiaomi", "Android", 32000)
 };
 
-Tablets[] tablet = new Tablets[]
+TabletsTechnique[] tablet = new TabletsTechnique[]
 {
-new Tablets("iPad", "Apple", 150000),
-new Tablets("iPad", "Apple", 150000)
+new TabletsTechnique("iPad", "Apple", 150000),
+new TabletsTechnique("iPad", "Apple", 150000)
 };
 
-Notebooks[] notebook = new Notebooks[]
+NotebooksTechnique[] notebook = new NotebooksTechnique[]
 {
-new Notebooks("Macbook", "Apple", 250000),
-new Notebooks("Asus", "Asus", 75000),
-new Notebooks("Dell", "Dell", 55000),
-new Notebooks("HP", "HP", 80000)
+new NotebooksTechnique("Macbook", "Apple", 250000),
+new NotebooksTechnique("Asus", "Asus", 75000),
+new NotebooksTechnique("Dell", "Dell", 55000),
+new NotebooksTechnique("HP", "HP", 80000)
 };
 
 for (int i = 0; i < smartphone.Length; i++)

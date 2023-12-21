@@ -3,13 +3,8 @@ using System.Diagnostics;
 
 namespace Inheritance
 {
-	public class Technique //родительский класс
+	public class Technique : AbstractTechnique
 	{
-		public string Name { get; set; }
-		public string Manufacturer { get; set; }
-		public int MemoryCapacity { get; set; }
-		public int ScreenDiagonal { get; set; }
-		public double Price { get; set; }
 
 		public Technique (string name, string manufacturer, double price)
 		{
@@ -18,36 +13,22 @@ namespace Inheritance
 			Price = price;
 		}
 
-		public virtual void GiveMeShortInfo()
-        //virtual - потому что в наследниках вместо слова "устройство" будет его название
-		//(смартфон, ноутбук или планшет)
+		public override void GiveMeShortInfo()
         {
             Console.WriteLine($"Устройство {Name} от бренда {Manufacturer}. Стоимость: {Price} рублей");
 		}
-
-		public void GetAPrice()
-		{
-			Console.WriteLine("Сколько штук Вы хотите купить?");
-			double n = Convert.ToDouble(Console.ReadLine());
-			if (n >= 5)
-			{
-				Price = n * Price - Price * (n/100);
-				Console.WriteLine($"Общая стоимость составит {Price} рублей");
-			}
-			else
-				Console.WriteLine($"Общая стоимость составит {n * Price} рублей");
-		}
 	}
 
-	public class Smartphones : Technique //класс-наследник
+	public class SmartphonesTechnique : AbstractTechnique
     {
 		public int CameraResolution { get; set; }
 
-		public Smartphones (string name, string manufacturer, double price) :
-			base (name, manufacturer, price) //наследование конструктора от базового класса
+		public SmartphonesTechnique(string name, string manufacturer, double price)
 		{
-
-		}
+            Name = name;
+            Manufacturer = manufacturer;
+            Price = price;
+        }
 
         public override void GiveMeShortInfo()
         {
@@ -55,15 +36,16 @@ namespace Inheritance
         }
     }
 
-	public class Tablets : Technique //класс-наследник
+	public class TabletsTechnique : AbstractTechnique
     {
 		public int CameraResolution { get; set; }
 		public bool StylusSupport { get; set; }
 
-        public Tablets (string name, string manufacturer, double price) :
-			base(name, manufacturer, price) //наследование конструктора от базового класса
+        public TabletsTechnique(string name, string manufacturer, double price)
         {
-
+            Name = name;
+            Manufacturer = manufacturer;
+            Price = price;
         }
 
         public override void GiveMeShortInfo()
@@ -74,21 +56,22 @@ namespace Inheritance
         public override bool Equals(object? obj)
 			//проверка метода Equals на примере планшетов с одинаковыми данными
         {
-			return obj is Tablets tablet &&
+			return obj is TabletsTechnique tablet &&
 				Name == tablet.Name &&
                 Manufacturer == tablet.Manufacturer &&
                 Price == tablet.Price;
         }
     }
 
-	public class Notebooks : Technique //класс-наследник
+	public class NotebooksTechnique : AbstractTechnique
     {
         public int BatteryLife { get; set; }
 
-        public Notebooks (string name, string manufacturer, double price) :
-			base(name, manufacturer, price) //наследование конструктора от базового класса
+        public NotebooksTechnique(string name, string manufacturer, double price)
         {
-
+            Name = name;
+            Manufacturer = manufacturer;
+            Price = price;
         }
 
         public override void GiveMeShortInfo()

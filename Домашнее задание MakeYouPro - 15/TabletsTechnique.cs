@@ -3,8 +3,8 @@ namespace Inheritance
 {
     public class TabletsTechnique : AbstractTechnique
     {
-        public int CameraResolution { get; set; }
-        public bool StylusSupport { get; set; }
+        private int CameraResolution { get; set; }
+        private bool StylusSupport { get; set; }
 
         public TabletsTechnique(string name, string manufacturer, double price)
         {

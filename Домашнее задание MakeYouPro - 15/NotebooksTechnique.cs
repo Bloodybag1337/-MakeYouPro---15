@@ -7,7 +7,7 @@ namespace Inheritance
 {
     public class NotebooksTechnique : AbstractTechnique
     {
-        public int BatteryLife { get; set; }
+        private int BatteryLife { get; set; }
 
         public NotebooksTechnique(string name, string manufacturer, double price)
         {
@@ -15,6 +15,7 @@ namespace Inheritance
             Manufacturer = manufacturer;
             Price = price;
         }
+
         public override void GiveMeShortInfo()
         {
             Console.WriteLine($"Ноутбук {Name} от бренда {Manufacturer}. Стоимость: {Price} рублей");

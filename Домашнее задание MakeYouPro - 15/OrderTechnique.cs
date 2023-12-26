@@ -11,12 +11,14 @@ namespace Inheritance;
 
 public class OrderTechnique
 {
-    public static string ClientName = "Артём";
-    public static string OrderDate = "31 декабря";
+    public static string ClientName { get; set; }
+    public static string OrderDate { get; set; }
     public double Count { get; set; }
 
-	public OrderTechnique(double count)
+	public OrderTechnique(string clientName, string orderDate, double count)
 	{
+        ClientName = clientName;
+        OrderDate = orderDate;
         Count = count;
 	}
 
@@ -55,14 +57,13 @@ public class OrderTechnique
                 if (Count >= 5)
                 {
                     abstractTechnique[i][j].Price = Count * abstractTechnique[i][j].Price - abstractTechnique[i][j].Price * (Count / 100);
-                    sum = abstractTechnique[i][j].Price;
+                    sum += abstractTechnique[i][j].Price;
                 }
                 else
                 {
                     abstractTechnique[i][j].Price *= Count;
-                    sum = abstractTechnique[i][j].Price;
+                    sum += abstractTechnique[i][j].Price;
                 }
-                sum += abstractTechnique[i][j].Price;
             }
         }
         Console.WriteLine($"{ClientName}, итоговая стоимость Вашего заказа от {OrderDate} составляет {sum} рублей");

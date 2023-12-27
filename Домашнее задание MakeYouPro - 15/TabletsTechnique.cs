@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Inheritance
 {
-    public class TabletsTechnique : AbstractTechnique
+    public class TabletsTechnique : AbstractTechnique, IInformer
     {
         private int CameraResolution { get; set; }
         private bool StylusSupport { get; set; }

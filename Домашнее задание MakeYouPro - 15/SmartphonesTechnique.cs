@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Inheritance;
 
-public class SmartphonesTechnique : AbstractTechnique
+public class SmartphonesTechnique : AbstractTechnique, IInformer
 {
     public int CameraResolution { get; set; }
 

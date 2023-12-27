@@ -1,28 +1,19 @@
 ﻿using System;
-/*
-Внесите следующие изменения в проект онлайн-магазина из позапрошлого блока:
-Добавьте класс заказа, который будет содержать в себе:
-имя заказчика,
-дату создания,
-позиции заказа и их количество,
-метод расчета суммы, который будет возвращать сумму всего заказа.
-*/
+
 namespace Inheritance;
 
-public class OrderTechnique
+public class OrderTechnique : ICounter
 {
-    public static string ClientName { get; set; }
-    public static string OrderDate { get; set; }
-    public double Count { get; set; }
+    public string ClientName;
+    public string OrderDate;
+    public double Count;
 
-	public OrderTechnique(string clientName, string orderDate, double count)
+    public OrderTechnique()
 	{
-        ClientName = clientName;
-        OrderDate = orderDate;
-        Count = count;
-	}
 
-	public static void CountSum()
+	}
+    
+	public void CountSum()
     {
         AbstractTechnique[][] abstractTechnique = new AbstractTechnique[3][];
 
@@ -44,6 +35,13 @@ public class OrderTechnique
             //new NotebooksTechnique("Dell", "Dell", 55000),
             //new NotebooksTechnique("HP", "HP", 80000)
         };
+
+        Console.WriteLine("Как Вас зовут?");
+        ClientName = Console.ReadLine();
+        Console.WriteLine();
+        Console.WriteLine("Укажите дату Вашего заказа:");
+        OrderDate = Console.ReadLine();
+        Console.WriteLine();
 
         double sum = 0;
         for (int i = 0; i < abstractTechnique.Length; i++)

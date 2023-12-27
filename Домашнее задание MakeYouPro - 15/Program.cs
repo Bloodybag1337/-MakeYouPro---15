@@ -2,10 +2,6 @@
 using System.Diagnostics;
 using Inheritance;
 
-Console.WriteLine("Как Вас зовут?");
-OrderTechnique.ClientName = Console.ReadLine();
-Console.WriteLine("Укажите дату Вашего заказа:");
-OrderTechnique.OrderDate = Console.ReadLine();
-Console.WriteLine();
-OrderTechnique.CountSum();
+OrderTechnique orderTechnique = new OrderTechnique();
+orderTechnique.CountSum();
 Console.ReadKey();

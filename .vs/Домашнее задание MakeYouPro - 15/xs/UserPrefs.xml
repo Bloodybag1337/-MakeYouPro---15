@@ -1,30 +1,30 @@
 ﻿<Properties StartupConfiguration="{919460AE-8AEB-457F-BF4F-F69A9005FFFE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Домашнее задание MakeYouPro - 15/OrderTechnique.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Домашнее задание MakeYouPro - 15/Program.cs">
     <Files>
-      <File FileName="Домашнее задание MakeYouPro - 15/Program.cs" Line="11" Column="19" />
-      <File FileName="Домашнее задание MakeYouPro - 15/SmartphonesTechnique.cs" />
-      <File FileName="Домашнее задание MakeYouPro - 15/TabletsTechnique.cs" />
-      <File FileName="Домашнее задание MakeYouPro - 15/NotebooksTechnique.cs" />
-      <File FileName="Домашнее задание MakeYouPro - 15/AbstractTechnique.cs" />
-      <File FileName="Домашнее задание MakeYouPro - 15/OrderTechnique.cs" Line="1" Column="14" />
+      <File FileName="Домашнее задание MakeYouPro - 15/Program.cs" Line="7" Column="19" />
+      <File FileName="Домашнее задание MakeYouPro - 15/SmartphonesTechnique.cs" Line="1" Column="1" />
+      <File FileName="Домашнее задание MakeYouPro - 15/TabletsTechnique.cs" Line="21" Column="49" />
+      <File FileName="Домашнее задание MakeYouPro - 15/NotebooksTechnique.cs" Line="1" Column="1" />
+      <File FileName="Домашнее задание MakeYouPro - 15/OrderTechnique.cs" Line="50" Column="14" />
+      <File FileName="Домашнее задание MakeYouPro - 15/AbstractTechnique.cs" Line="13" Column="48" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Домашнее задание MakeYouPro - 15" expanded="True">
             <Node name="Домашнее задание MakeYouPro - 15">
-              <Node name="OrderTechnique.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Домашнее_220задание_220MakeYouPro_220-_22015 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
 </Properties>

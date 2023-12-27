@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 namespace Inheritance
 {
-    public class NotebooksTechnique : AbstractTechnique
+    public class NotebooksTechnique : AbstractTechnique, IInformer
     {
         private int BatteryLife { get; set; }
 

@@ -11,18 +11,5 @@ namespace Inheritance
         public double Price { get; set; }
 
         public abstract void GiveMeShortInfo();
-
-        public void GetAPrice()
-        {
-            Console.WriteLine("Сколько штук Вы хотите купить?");
-            double n = Convert.ToDouble(Console.ReadLine());
-            if (n >= 5)
-            {
-                Price = n * Price - Price * (n / 100);
-                Console.WriteLine($"Общая стоимость составит {Price} рублей");
-            }
-            else
-                Console.WriteLine($"Общая стоимость составит {n * Price} рублей");
-        }
     }
 }
